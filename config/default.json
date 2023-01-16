@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://NetworkUser:networkuser@cluster0.cy7fbal.mongodb.net/SocialNetwork",
+  "jwtSecret": "secret123"
+}
