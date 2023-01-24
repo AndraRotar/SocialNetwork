@@ -4,8 +4,17 @@ import authRouter from "./api/auth.js";
 import postsRouter from "./api/posts.js";
 import profileRouter from "./api/profile.js";
 import usersRouter from "./api/users.js";
+import cors from "cors";
 
 const app = express();
+
+const corsOptions = {
+  orgini: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 connectToDB();
 
